@@ -61,6 +61,8 @@ Only if you want to also trigger it manually. Ajax calls trigger these methods a
 | Vue Event | Description |
 | --- | --- |
 | `@search(terms, Function done)` | Triggered by the component when a search should start and offer some results. |
+| `@input(value)` | At change the value of component this event is fired sending the value what was assigned (even if it is done by setValue). |
+| `@selected(item)` | It is fired when one item of list is selected and send the entire item selected (note what `selected` is always triggered after `input`). |
 
 Example for `search` event:
 
